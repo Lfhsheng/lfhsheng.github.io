@@ -1,0 +1,12 @@
+notice:
+  enable: true
+  content: 沉浸在Touch Fish的海洋中无法自拔
+  mode: time
+wordcloud:
+  enable: true
+footer:
+  live_time:
+    enable: true
+    prefix: 博客：都运行了
+    suffix: 了也没人来看我一下 ＞﹏＜
+    start_time: "2021-09-26T08:30:00"
