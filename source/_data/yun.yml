@@ -7,6 +7,29 @@ wordcloud:
 footer:
   live_time:
     enable: true
-    prefix: 博客：都运行了
-    suffix: 了也没人来看我一下 ＞﹏＜
+    prefix: 我都运行了
+    suffix: 了也没人来看我＞︿＜
     start_time: "2021-09-26T08:30:00"
+
+
+
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+utterances:
+  enable: true
+  repo:  shihongze001/Beaudar
+  issue-term: pathname
+  # label: comment
+  theme: github-dark
+
+busuanzi:
+  enable: true
+  site_uv: true
+  site_uv_icon: icon-user-line
+  site_pv: true
+  site_pv_icon: icon-eye-line
+  page_pv: true
+  page_pv_icon: icon-eye-line
