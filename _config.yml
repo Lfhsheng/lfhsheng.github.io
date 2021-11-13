@@ -4,17 +4,17 @@
 
 # Site
 title: 泠风寒声的小窝
-subtitle: ''
-description: ''
-keywords:
+subtitle: 'I like Touch Fish!!!'
+description: '沉浸在Touch Fish的海洋中无法自拔'
+keywords: 
 author: 泠风寒声
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://shihongze001.github.io/
-permalink: :year/:month/:day/:title/
+url: https://lfhsheng.top/
+permalink: posts/:id/
 
 permalink_defaults:
 pretty_urls:
@@ -30,7 +30,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-
+- README.md
+- BingSiteAuth.xml
+- CNAME
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -45,14 +47,14 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -105,9 +107,9 @@ theme: yun
 
 deploy:
   type: git
-  repo: https://github.com/shihongze001/shihongze001.github.io # 比如：https://github.com/YunYouJun/yunyoujun.github.io
+  repo: https://github.com/lfhsheng/lfhsheng.github.io # 比如：https://github.com/YunYouJun/yunyoujun.github.io
   branch: master # 默认使用 master 分支
-  message: v1.1.3 # 你可以自定义此次部署更新的说明
+  message:  # 你可以自定义此次部署更新的说明
 
 aplayer:
   cdn: https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js
@@ -115,3 +117,27 @@ aplayer:
   meting: true
   meting_cdn: https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js
 
+# Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: false
+  # enable: false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-z16 # npm-module package name
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://cdn.jsdelivr.net/npm/live2d-wid
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 0

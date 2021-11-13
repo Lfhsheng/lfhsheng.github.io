@@ -4,32 +4,77 @@ notice:
   mode: time
 wordcloud:
   enable: true
+  height: 350
 footer:
   live_time:
     enable: true
-    prefix: 我都运行了
-    suffix: 了也没人来看我＞︿＜
+    prefix: 本站在Web的海洋中漂泊了
+    suffix: 
     start_time: "2021-09-26T08:30:00"
-
-
+  support:
+    enable: true
+    title: Travelling
+    link: https://travellings.link/
+    logo: https://travellings.link/assets/logo.gif
+    prefix: 
+    suffix: 
+waline:
+  enable: true
+  serverURL: https://waline-n41x.vercel.app/
+  # visitor: false
+  # display comment count
+  comment: true
 
 wordcount:
   enable: true
   count: true
   time: true
 
-utterances:
+albums:
   enable: true
-  repo:  shihongze001/Beaudar
-  issue-term: pathname
-  # label: comment
-  theme: github-dark
+
+
+codeblock:
+  copy_btn: true
+  prismjs:
+    light: default
+    dark: tomorrow
 
 busuanzi:
-  enable: true
+  enable: false
   site_uv: true
   site_uv_icon: icon-user-line
   site_pv: true
   site_pv_icon: icon-eye-line
   page_pv: true
   page_pv_icon: icon-eye-line
+
+aplayer:
+  global: false
+  meting: false
+  # https://github.com/metowolf/MetingJS/tree/v1.2#option
+  widget:
+    enable: false
+    autoplay: false
+    # theme: "#2980b9"
+    loop: all
+    order: list
+    preload: auto
+    volume: 0.7
+    mutex: true
+    lrcType: 0
+    listFolded: false
+    listMaxHeight: 340px
+    audio:
+      - name: At The Edge
+        artist: 千坂
+        url: https://cdn.jsdelivr.net/gh/lfhsheng/lfhsheng.github.io/media/AtTheEdge.mp3
+        cover: https://cdn.jsdelivr.net/gh/lfhsheng/lfhsheng.github.io/images/AtTheEdge.jpg
+    meting:
+      enable: false
+      id: 2802777466
+      server: netease
+      type: playlist
+
+pjax:
+  enable: true
