@@ -6,6 +6,7 @@ wordcloud:
   enable: true
   height: 350
 footer:
+  custom_text: <a href="https://icp.gov.moe/?keyword=20210142" target="_blank">萌ICP备20210142号</a>
   live_time:
     enable: true
     prefix: 本站在Web的海洋中漂泊了
