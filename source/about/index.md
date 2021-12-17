@@ -1,6 +1,9 @@
 ---
 title: 关于我
+aplayer: true
 ---
+{% meting "289070169" "netease" "song" "theme:#C20C0C" %}
+
 ## 我
 
 ### 自我介绍

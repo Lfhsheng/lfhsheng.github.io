@@ -19,6 +19,7 @@ footer:
     logo: https://travellings.link/assets/logo.gif
     prefix: 
     suffix: 
+
 waline:
   enable: true
   serverURL: https://waline-n41x.vercel.app/
