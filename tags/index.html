@@ -31,7 +31,7 @@ document.addEventListener("pjax:success", initScrollReveal);
   const wordcloud_canvas = document.getElementById('wordcloud-canvas')
   wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
   wordcloud_canvas.height = 350
-  let wordcloud_config = {"list":[["HTML",1.1,"/tags/HTML/"],["Markdown",1.1,"/tags/Markdown/"],["MediaWiki",1.1,"/tags/MediaWiki/"],["Typecho",1.1,"/tags/Typecho/"],["语文公式",1.2,"/tags/语文公式/"],["语文六年级上册",1.2,"/tags/语文六年级上册/"],["作文提纲",1.2,"/tags/作文提纲/"],["随便写写",1.6,"/tags/随便写写/"],["云空调",1.1,"/tags/云空调/"],["踩坑",1.2,"/tags/踩坑/"],["指南",1.1,"/tags/指南/"],["npm",1.1,"/tags/npm/"],["lfhsheng的安利",1.1,"/tags/lfhsheng的安利/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
+  let wordcloud_config = {"list":[["Markdown",1.1,"/tags/Markdown/"],["HTML",1.1,"/tags/HTML/"],["Typecho",1.1,"/tags/Typecho/"],["MediaWiki",1.1,"/tags/MediaWiki/"],["随便写写",1.6,"/tags/随便写写/"],["语文公式",1.2,"/tags/语文公式/"],["语文六年级上册",1.2,"/tags/语文六年级上册/"],["作文提纲",1.2,"/tags/作文提纲/"],["云空调",1.1,"/tags/云空调/"],["npm",1.1,"/tags/npm/"],["lfhsheng的安利",1.1,"/tags/lfhsheng的安利/"],["踩坑",1.2,"/tags/踩坑/"],["指南",1.1,"/tags/指南/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
   wordcloud_config.hover = function(item, dimension){
     if (!dimension) {
       wordbox.hidden = true
@@ -53,12 +53,7 @@ function loadWordcloud() {
   }
 }
 
-loadWordcloud();</script></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>留下你的邮箱会收到评论回复通知哦😉</span><br></div><div id="waline"></div><script>Yun.utils.getScript("https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js", () => {
-  const walineConfig = {"enable":true,"serverURL":"https://waline-n41x.vercel.app/","comment":true,"el":"#waline","lang":"zh-CN"}
-  walineConfig.path = "/tags/index.html"
-  walineConfig.dark = 'html[data-user-color-scheme="dark"]'
-  new Waline(walineConfig)
-}, window.Waline);</script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 – 2022 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 泠风寒声</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.6.2</span></div><div class="live_time"><span>本站在Web的海洋中漂泊了</span><span id="display_live_time"></span><script>function blog_live_time() {
+loadWordcloud();</script></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>留下你的邮箱会收到评论回复通知哦😉</span><br></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2021 – 2022 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> 泠风寒声</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v5.4.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.6.2</span></div><div class="live_time"><span>本站在Web的海洋中漂泊了</span><span id="display_live_time"></span><script>function blog_live_time() {
   setTimeout(blog_live_time, 1000);
   const start = new Date('2021-09-26T08:30:00');
   const now = new Date();
@@ -73,7 +68,7 @@ loadWordcloud();</script></div><div class="hty-card" id="comment"><div class="co
   display_live_time.innerHTML = " " + passDay + " 天 " + passHour + " 小时 " + passMinute + " 分 " + passSecond + " 秒";
 }
 blog_live_time();
-</script></div><div class="footer-custom-text"><a href="https://icp.gov.moe/?keyword=20210142" target="_blank">萌ICP备20210142号</a></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#FFA500" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+</script></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#FFA500" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search-line"></use></svg></span></a><script>window.addEventListener("DOMContentLoaded", () => {
   // Handle and trigger popup window
   document.querySelector(".popup-trigger").addEventListener("click", () => {
     document.querySelector(".popup").classList.add("show");
